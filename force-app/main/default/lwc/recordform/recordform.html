@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="account creation">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+               object-api-name ="Account"
+                layout-type="compact"
+                columns="2"
+                onsuccess={handleSuccess}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<apex:page showHeader="false">
+    <apex:includeLightning />
+    <div id="lwccontainer"></div>
+    <script>
+        $lightning.use("c:lwctovf", function () {
+            $lightning.createComponent("c:displaydatawithvf", {}, "lwccontainer",
+                function (cmp) {
+
+                });
+
+        });
+    </script>
+</apex:page>

@@ -1,0 +1,15 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "apexPMD.pmdPath": "\"apexPMD.pmdPath\":C:\\Program Files\\pmd-bin-6.51.0\\bin",
+  "apexPMD.rulesetPath": "",
+  "apexPMD.runOnFileChange": true,
+  "apexPMD.enableCache": true,
+  "apexPMD.runOnFileOpen": true,
+  "apexPMD.showStdOut": true,
+  "apexPMD.useDefaultRuleset": true,
+  "less.lint.emptyRules": "ignore"
+}

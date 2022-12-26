@@ -1,0 +1,17 @@
+<template>
+    <lightning-quick-action-panel header="edit quick actions" >
+        <lightning-record-edit-form  record-id={recordId} object-api-name="objectApiName" onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Name">
+            </lightning-input-field>
+            <lightning-input-field field-name="phone__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="email__c">
+            </lightning-input-field>
+            <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="save">
+            </lightning-button>
+            <lightning-button class="slds-m-top_small" variant="neutral" type="cancel" name="update" label="cancel">
+            </lightning-button>
+    
+        </lightning-record-edit-form>
+    </lightning-quick-action-panel>
+</template>

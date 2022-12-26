@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="parent event comp">
+        <p class="slds-p-horizontal_medium">
+          message from:  {message}
+        </p>
+    </lightning-card>
+    <c-child-to-parent onchildmessage={handleChange}></c-child-to-parent>
+</template>

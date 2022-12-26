@@ -1,0 +1,52 @@
+<template>
+    <!--static variables with combo box-->
+    <lightning-card title="static variable with combo box" icon-name="custom:custom60">
+        <template if:true={options}>
+            <div class="slds-m-around_medium">
+            <lightning-combobox
+                    name="progress"
+                    label="Status"
+                    value={selectedValue}
+                    placeholder="Select Progress"
+                    options={options}
+                    onchange={handleChange} ></lightning-combobox>
+                
+            <p>Selected value is: <b>{selectedValue}</b></p>
+        </div>
+        </template>
+       
+    </lightning-card> <br/>
+    <!--static variables with combo box -->
+    <lightning-card title="lead source combo box" icon-name="custom:custom61">
+        <template if:true={leadsourceValues.data}>
+            <div class="slds-m-around_medium">
+            <lightning-combobox
+                    name="LeadSource"
+                    label="lead source"
+                    value={selectedLeadSource}
+                    placeholder="Select lead source "
+                    options={leadsourceValues.data.Values}
+                    onchange={handleLeadSourceChange} ></lightning-combobox>
+                
+            <p>Selected value is: <b>{handleLeadSourceChange}</b></p>
+        </div>
+        </template>
+       
+    </lightning-card><br/>
+    <lightning-card title="type field  combo box" icon-name="custom:custom62">
+        <template if:true={typeValues.data}>
+            <div class="slds-m-around_medium">
+            <lightning-combobox
+                    name="AccountType"
+                    label="account type"
+                    value={selectedAccountType}
+                    placeholder="Select account "
+                    options={typeValues.data.Values}
+                    onchange={handleTypeChange} ></lightning-combobox>
+                
+            <p>Selected value is: <b>{handleTypeChange}</b></p>
+        </div>
+        </template>
+       
+    </lightning-card> 
+</template>

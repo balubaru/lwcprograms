@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="parent component">
+        <p class="slds-p-horizontal_medium">
+        <lightning-input type="text" onchange={handleChange}></lightning-input>
+    </p>
+    </lightning-card>
+    <c-childcomp message={messagefromparent}></c-childcomp>
+</template>

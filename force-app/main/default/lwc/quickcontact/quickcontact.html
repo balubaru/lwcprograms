@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="quick contact creation">
+        <div class="slds-var-m-around_medium">
+            <lightning-record-form
+               object-api-name ="Contact"
+                fields={contactfields}
+                columns="2"
+                onsuccess={handleSuccess}>
+                onsubmit={handleSubmit}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>
