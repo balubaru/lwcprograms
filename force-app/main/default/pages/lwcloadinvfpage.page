@@ -4,8 +4,8 @@
     <script>
         $lightning.use("c:lwctovf", function () {
             $lightning.createComponent("c:displaydatawithvf", {}, "lwccontainer",
-                function (cmp) {
-
+                function (cmps) {
+                
                 });
 
         });
